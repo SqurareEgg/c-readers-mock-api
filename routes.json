@@ -1,0 +1,17 @@
+{
+  "/api/auth/login": "/users",
+  "/api/auth/register/student": "/users",
+  "/api/schools": "/schools",
+  "/api/articles": "/articles",
+  "/api/articles/:id": "/articles/:id",
+  "/api/articles/:articleId/quizzes": "/quizzes",
+  "/api/quiz/:articleId": "/quizzes",
+  "/api/vocabulary": "/vocabulary",
+  "/api/vocabulary/:id": "/vocabulary/:id",
+  "/api/writings": "/writings",
+  "/api/writings/:id": "/writings/:id",
+  "/api/ai/review": "/aiReviews",
+  "/api/mission/today": "/mission",
+  "/api/membership": "/membership",
+  "/api/payments": "/payments"
+}

@@ -1,0 +1,283 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userId": "student01",
+      "password": "test1234",
+      "name": "김어린이",
+      "email": "student01@test.com",
+      "userType": "STUDENT",
+      "schoolId": "SCH001",
+      "grade": 4,
+      "token": "mock-jwt-token-student01"
+    },
+    {
+      "id": 2,
+      "userId": "school01",
+      "password": "test1234",
+      "name": "이선생",
+      "email": "school01@test.com",
+      "userType": "SCHOOL",
+      "schoolId": "SCH001",
+      "grade": null,
+      "token": "mock-jwt-token-school01"
+    }
+  ],
+
+  "schools": [
+    { "schoolId": "SCH001", "schoolName": "서울어린이초등학교", "region": "서울" },
+    { "schoolId": "SCH002", "schoolName": "부산행복초등학교", "region": "부산" },
+    { "schoolId": "SCH003", "schoolName": "대구미래초등학교", "region": "대구" },
+    { "schoolId": "SCH004", "schoolName": "인천바다초등학교", "region": "인천" },
+    { "schoolId": "SCH005", "schoolName": "광주빛초등학교", "region": "광주" }
+  ],
+
+  "articles": [
+    {
+      "articleId": "ART001",
+      "title": "인공지능이 바꾸는 미래 직업 세계",
+      "summary": "전문가들은 앞으로 10년 안에 많은 직업이 AI로 대체될 것이라고 전망합니다. 하지만 창의력과 감성 지능은 여전히 인간만의 영역입니다.",
+      "content": "<p>인공지능(AI) 기술이 빠르게 발전하면서 미래의 직업 세계도 크게 바뀔 것으로 예상됩니다.</p><p>세계경제포럼(WEF)은 2030년까지 전체 일자리의 약 40%가 자동화될 것이라고 전망했습니다.</p><p>하지만 전문가들은 이것이 반드시 나쁜 소식은 아니라고 말합니다. AI가 단순 반복 작업을 대신하면서 사람들은 더 창의적인 일에 집중할 수 있게 된다는 것입니다.</p><p>따라서 앞으로 중요해지는 능력은 <strong>창의력</strong>, <strong>비판적 사고</strong>, 그리고 <strong>감성 지능</strong>입니다.</p>",
+      "imageUrl": "https://picsum.photos/seed/art001/600/400",
+      "category": "경제",
+      "targetGrade": "초학년",
+      "author": "김기자",
+      "publishedAt": "2026-04-17",
+      "readTimeMin": 3
+    },
+    {
+      "articleId": "ART002",
+      "title": "화성 탐사선 퍼서비어런스, 유기물 흔적 발견",
+      "summary": "NASA의 화성 탐사선이 화성 표면에서 생명체 존재 가능성을 보여주는 유기물 흔적을 발견했습니다.",
+      "content": "<p>미국 항공우주국(NASA)의 화성 탐사선 퍼서비어런스가 화성 표면에서 유기물 흔적을 발견했습니다.</p><p>연구팀은 이 발견이 과거 화성에 생명체가 존재했을 가능성을 높여준다고 밝혔습니다.</p><p>탐사선은 화성의 예제로 분화구에서 암석 샘플을 채취해 분석한 결과 탄소 기반 화합물을 확인했습니다.</p>",
+      "imageUrl": "https://picsum.photos/seed/art002/600/400",
+      "category": "과학",
+      "targetGrade": "저학년",
+      "author": "박기자",
+      "publishedAt": "2026-04-16",
+      "readTimeMin": 3
+    },
+    {
+      "articleId": "ART003",
+      "title": "전국 어린이 창업 대회, 환경 아이디어 대상 수상",
+      "summary": "전국 500개 팀이 참가한 창업 대회에서 재활용 소재로 만든 운동화 아이디어가 대상을 받았습니다.",
+      "content": "<p>지난 주말 열린 전국 어린이 창업 아이디어 대회에서 재활용 소재로 만든 운동화 아이디어를 출품한 팀이 대상을 수상했습니다.</p><p>이 팀은 버려진 페트병을 원단으로 변환하는 기술을 활용해 친환경 운동화를 제안했습니다.</p>",
+      "imageUrl": "https://picsum.photos/seed/art003/600/400",
+      "category": "사회",
+      "targetGrade": "초학년",
+      "author": "이기자",
+      "publishedAt": "2026-04-15",
+      "readTimeMin": 2
+    },
+    {
+      "articleId": "ART004",
+      "title": "조선시대 선비의 하루, 어떻게 보냈을까?",
+      "summary": "조선시대 선비들은 새벽부터 글 읽기로 하루를 시작했습니다. 그들의 규칙적인 일과를 들여다봅니다.",
+      "content": "<p>조선시대 선비들은 매일 새벽 4시에 일어나 세수와 의관 정제를 마친 뒤 글 읽기를 시작했습니다.</p><p>오전에는 경서를 공부하고, 오후에는 시와 글씨를 연습했습니다.</p>",
+      "imageUrl": "https://picsum.photos/seed/art004/600/400",
+      "category": "역사",
+      "targetGrade": "저학년",
+      "author": "최기자",
+      "publishedAt": "2026-04-14",
+      "readTimeMin": 3
+    },
+    {
+      "articleId": "ART005",
+      "title": "남극 빙하, 녹는 속도 더 빨라졌다",
+      "summary": "과학자들이 남극 빙하의 감소 속도가 10년 전보다 3배 빨라졌다고 경고했습니다.",
+      "content": "<p>남극 빙하가 녹는 속도가 점점 빨라지고 있다는 연구 결과가 발표됐습니다.</p><p>이 추세가 계속되면 2100년까지 해수면이 최대 1미터 상승할 수 있다고 과학자들은 경고합니다.</p>",
+      "imageUrl": "https://picsum.photos/seed/art005/600/400",
+      "category": "환경",
+      "targetGrade": "초학년",
+      "author": "정기자",
+      "publishedAt": "2026-04-13",
+      "readTimeMin": 2
+    },
+    {
+      "articleId": "ART006",
+      "title": "우리나라 재생에너지 비율, 처음으로 20% 돌파",
+      "summary": "태양광과 풍력 발전이 크게 늘면서 국내 재생에너지 비율이 사상 처음으로 20%를 넘었습니다.",
+      "content": "<p>산업통상자원부는 올해 1분기 국내 재생에너지 발전 비율이 20.3%를 기록했다고 발표했습니다.</p><p>이는 태양광 설비 보급이 대폭 늘어난 덕분입니다.</p>",
+      "imageUrl": "https://picsum.photos/seed/art006/600/400",
+      "category": "환경",
+      "targetGrade": "초학년",
+      "author": "강기자",
+      "publishedAt": "2026-04-12",
+      "readTimeMin": 2
+    }
+  ],
+
+  "quizzes": [
+    {
+      "quizId": "QUIZ001",
+      "articleId": "ART001",
+      "question": "다음 중 '인공지능(AI)'에 대한 설명으로 올바른 것은?",
+      "options": ["인간의 감정을 느끼는 로봇", "컴퓨터가 스스로 학습하는 기술", "인터넷에 연결된 모든 기기", "데이터를 저장하는 창고"],
+      "correctIndex": 1
+    },
+    {
+      "quizId": "QUIZ002",
+      "articleId": "ART001",
+      "question": "기사에서 2030년까지 자동화될 일자리 비율은?",
+      "options": ["약 20%", "약 30%", "약 40%", "약 50%"],
+      "correctIndex": 2
+    },
+    {
+      "quizId": "QUIZ003",
+      "articleId": "ART001",
+      "question": "AI가 대신할 수 없는 인간 고유의 능력은?",
+      "options": ["계산 능력", "기억력", "창의력과 감성 지능", "빠른 정보 처리"],
+      "correctIndex": 2
+    },
+    {
+      "quizId": "QUIZ004",
+      "articleId": "ART002",
+      "question": "퍼서비어런스가 화성에서 발견한 것은?",
+      "options": ["물", "유기물 흔적", "외계 생명체", "금속 광물"],
+      "correctIndex": 1
+    },
+    {
+      "quizId": "QUIZ005",
+      "articleId": "ART002",
+      "question": "화성 탐사선이 샘플을 채취한 장소는?",
+      "options": ["올림푸스 산", "발레스 마리네리스", "예제로 분화구", "북극 빙관"],
+      "correctIndex": 2
+    },
+    {
+      "quizId": "QUIZ006",
+      "articleId": "ART002",
+      "question": "이번 발견의 의의로 가장 적절한 것은?",
+      "options": ["화성 이주 계획 확정", "과거 화성 생명체 존재 가능성", "화성 날씨 예측 가능", "우주 여행 비용 절감"],
+      "correctIndex": 1
+    }
+  ],
+
+  "vocabulary": [
+    {
+      "vocabId": "VOC001",
+      "userId": 1,
+      "articleId": "ART001",
+      "word": "인공지능",
+      "originalSentence": "인공지능(AI) 기술이 빠르게 발전하면서 미래의 직업 세계도 크게 바뀔 것으로 예상됩니다.",
+      "meaning": "인간의 지능을 컴퓨터로 구현한 기술로, 학습·추론·문제해결 등을 수행합니다.",
+      "source": "HIGHLIGHT",
+      "checked": false,
+      "savedAt": "2026-04-17"
+    },
+    {
+      "vocabId": "VOC002",
+      "userId": 1,
+      "articleId": "ART001",
+      "word": "자동화",
+      "originalSentence": "2030년까지 전체 일자리의 약 40%가 자동화될 것이라고 전망했습니다.",
+      "meaning": "사람이 직접 하던 일을 기계나 컴퓨터가 스스로 처리하도록 하는 것입니다.",
+      "source": "QUIZ_WRONG",
+      "checked": false,
+      "savedAt": "2026-04-17"
+    },
+    {
+      "vocabId": "VOC003",
+      "userId": 1,
+      "articleId": "ART001",
+      "word": "창의력",
+      "originalSentence": "앞으로 중요해지는 능력은 창의력, 비판적 사고, 그리고 감성 지능입니다.",
+      "meaning": "새롭고 독창적인 것을 만들어내는 능력입니다.",
+      "source": "HIGHLIGHT",
+      "checked": true,
+      "savedAt": "2026-04-17"
+    }
+  ],
+
+  "writings": [
+    {
+      "writingId": "WRT001",
+      "userId": 1,
+      "articleId": "ART001",
+      "sixW": {
+        "who": "세계경제포럼(WEF) 전문가들이",
+        "when": "2030년까지",
+        "where": "전 세계 직업 시장에서",
+        "what": "40%의 일자리가 자동화될 것이라고",
+        "how": "AI 기술 발전을 통해",
+        "why": "단순 반복 업무가 자동화되기 때문에"
+      },
+      "myOpinion": "인공지능이 발전하면서 많은 직업이 바뀔 것 같습니다. 저는 이것이 긍정적이라고 생각합니다. 왜냐하면 사람들이 더 중요한 일을 할 수 있을 것 같기 때문입니다.",
+      "isPublish": true,
+      "status": "PUBLISHED",
+      "publishedAt": "2026-04-17",
+      "shareUrl": "https://c-readers.kr/share/wrt001"
+    },
+    {
+      "writingId": "WRT002",
+      "userId": 1,
+      "articleId": "ART002",
+      "sixW": {
+        "who": "",
+        "when": "",
+        "where": "",
+        "what": "",
+        "how": "",
+        "why": ""
+      },
+      "myOpinion": "화성에서 유기물이 발견됐다는 소식이 정말 놀랍습니다.",
+      "isPublish": false,
+      "status": "DRAFT",
+      "publishedAt": null,
+      "shareUrl": null
+    }
+  ],
+
+  "aiReviews": [
+    {
+      "reviewId": "REV001",
+      "writingId": "WRT001",
+      "userId": 1,
+      "correctedContent": "인공지능이 발전하면서 많은 직업이 바뀔 것 같습니다. 저는 이것이 긍정적이라고 생각합니다. 왜냐하면 사람들이 더 중요한 일을 할 수 있을 것이기 때문입니다.",
+      "feedbacks": [
+        {
+          "original": "할 수 있을 것 같기 때문입니다",
+          "suggestion": "할 수 있을 것이기 때문입니다",
+          "reason": "'것 같기'는 불필요한 추측 표현입니다. 더 명확하게 쓰면 좋아요.",
+          "type": "STRUCTURE"
+        },
+        {
+          "original": "긍정적이라고",
+          "suggestion": "긍정적이라고 (좋아요!)",
+          "reason": "어휘 선택이 적절합니다.",
+          "type": "VOCAB"
+        }
+      ],
+      "summary": "전체적으로 좋은 글이에요! 자신의 의견을 명확하게 표현하는 점이 훌륭합니다. 문장 끝부분의 표현을 조금 다듬으면 더 자연스러운 글이 될 거예요.",
+      "score": 78,
+      "createdAt": "2026-04-17"
+    }
+  ],
+
+  "mission": [
+    {
+      "userId": 1,
+      "date": "2026-04-17",
+      "readCount": 1,
+      "quizCount": 0,
+      "writingCount": 1,
+      "isAllClear": false
+    }
+  ],
+
+  "membership": [
+    {
+      "planId": "PLAN001",
+      "planName": "베이직",
+      "amount": 9900,
+      "description": "월 9,900원 / 기사 무제한 + 퀴즈"
+    },
+    {
+      "planId": "PLAN002",
+      "planName": "프리미엄",
+      "amount": 19900,
+      "description": "월 19,900원 / 베이직 + AI 첨삭 무제한"
+    }
+  ],
+
+  "payments": []
+}
