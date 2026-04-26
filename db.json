@@ -9,7 +9,8 @@
       "userType": "STUDENT",
       "schoolId": "SCH001",
       "grade": 4,
-      "token": "mock-jwt-token-student01"
+      "token": "mock-jwt-token-student01",
+      "streakDays": 12
     },
     {
       "id": 2,
@@ -20,20 +21,22 @@
       "userType": "SCHOOL",
       "schoolId": "SCH001",
       "grade": null,
-      "token": "mock-jwt-token-school01"
+      "token": "mock-jwt-token-school01",
+      "streakDays": 0
     }
   ],
 
   "schools": [
-    { "schoolId": "SCH001", "schoolName": "서울어린이초등학교", "region": "서울" },
-    { "schoolId": "SCH002", "schoolName": "부산행복초등학교", "region": "부산" },
-    { "schoolId": "SCH003", "schoolName": "대구미래초등학교", "region": "대구" },
-    { "schoolId": "SCH004", "schoolName": "인천바다초등학교", "region": "인천" },
-    { "schoolId": "SCH005", "schoolName": "광주빛초등학교", "region": "광주" }
+    { "id": 1, "schoolId": "SCH001", "schoolName": "서울어린이초등학교", "region": "서울" },
+    { "id": 2, "schoolId": "SCH002", "schoolName": "부산행복초등학교", "region": "부산" },
+    { "id": 3, "schoolId": "SCH003", "schoolName": "대구미래초등학교", "region": "대구" },
+    { "id": 4, "schoolId": "SCH004", "schoolName": "인천바다초등학교", "region": "인천" },
+    { "id": 5, "schoolId": "SCH005", "schoolName": "광주빛초등학교", "region": "광주" }
   ],
 
   "articles": [
     {
+      "id": 1,
       "articleId": "ART001",
       "title": "인공지능이 바꾸는 미래 직업 세계",
       "summary": "전문가들은 앞으로 10년 안에 많은 직업이 AI로 대체될 것이라고 전망합니다. 하지만 창의력과 감성 지능은 여전히 인간만의 영역입니다.",
@@ -43,9 +46,17 @@
       "targetGrade": "초학년",
       "author": "김기자",
       "publishedAt": "2026-04-17",
-      "readTimeMin": 3
+      "readTimeMin": 3,
+      "keywords": [
+        { "word": "인공지능", "meaning": "컴퓨터가 스스로 학습하고 판단하는 기술" },
+        { "word": "자동화", "meaning": "기계가 사람 대신 일을 처리하도록 하는 것" },
+        { "word": "창의력", "meaning": "새롭고 독창적인 것을 만들어내는 능력" },
+        { "word": "감성 지능", "meaning": "자신과 타인의 감정을 이해하고 조절하는 능력" },
+        { "word": "비판적 사고", "meaning": "정보를 분석하고 올바르게 판단하는 능력" }
+      ]
     },
     {
+      "id": 2,
       "articleId": "ART002",
       "title": "화성 탐사선 퍼서비어런스, 유기물 흔적 발견",
       "summary": "NASA의 화성 탐사선이 화성 표면에서 생명체 존재 가능성을 보여주는 유기물 흔적을 발견했습니다.",
@@ -55,9 +66,17 @@
       "targetGrade": "저학년",
       "author": "박기자",
       "publishedAt": "2026-04-16",
-      "readTimeMin": 3
+      "readTimeMin": 3,
+      "keywords": [
+        { "word": "유기물", "meaning": "탄소를 포함한 생명체 관련 물질" },
+        { "word": "탐사선", "meaning": "우주나 바다 등 미지의 세계를 조사하는 기계" },
+        { "word": "분화구", "meaning": "화산이 폭발한 흔적으로 생긴 움푹한 지형" },
+        { "word": "생명체", "meaning": "살아있는 모든 것" },
+        { "word": "탄소", "meaning": "생물의 몸을 이루는 가장 기본적인 원소" }
+      ]
     },
     {
+      "id": 3,
       "articleId": "ART003",
       "title": "전국 어린이 창업 대회, 환경 아이디어 대상 수상",
       "summary": "전국 500개 팀이 참가한 창업 대회에서 재활용 소재로 만든 운동화 아이디어가 대상을 받았습니다.",
@@ -67,9 +86,17 @@
       "targetGrade": "초학년",
       "author": "이기자",
       "publishedAt": "2026-04-15",
-      "readTimeMin": 2
+      "readTimeMin": 2,
+      "keywords": [
+        { "word": "창업", "meaning": "새로운 사업을 시작하는 것" },
+        { "word": "재활용", "meaning": "버려진 물건을 다시 사용할 수 있게 만드는 것" },
+        { "word": "친환경", "meaning": "자연환경을 해치지 않는 방식" },
+        { "word": "소재", "meaning": "물건을 만드는 데 쓰이는 재료" },
+        { "word": "아이디어", "meaning": "문제를 해결하거나 새로운 것을 만드는 생각" }
+      ]
     },
     {
+      "id": 4,
       "articleId": "ART004",
       "title": "조선시대 선비의 하루, 어떻게 보냈을까?",
       "summary": "조선시대 선비들은 새벽부터 글 읽기로 하루를 시작했습니다. 그들의 규칙적인 일과를 들여다봅니다.",
@@ -79,9 +106,17 @@
       "targetGrade": "저학년",
       "author": "최기자",
       "publishedAt": "2026-04-14",
-      "readTimeMin": 3
+      "readTimeMin": 3,
+      "keywords": [
+        { "word": "선비", "meaning": "조선시대에 학문을 연구하고 덕을 쌓던 사람" },
+        { "word": "경서", "meaning": "유학의 가르침이 담긴 중요한 책들" },
+        { "word": "의관 정제", "meaning": "옷차림과 외모를 단정하게 가다듬는 것" },
+        { "word": "일과", "meaning": "하루 동안 규칙적으로 하는 일의 순서" },
+        { "word": "공부", "meaning": "지식이나 기술을 배우고 익히는 것" }
+      ]
     },
     {
+      "id": 5,
       "articleId": "ART005",
       "title": "남극 빙하, 녹는 속도 더 빨라졌다",
       "summary": "과학자들이 남극 빙하의 감소 속도가 10년 전보다 3배 빨라졌다고 경고했습니다.",
@@ -91,9 +126,17 @@
       "targetGrade": "초학년",
       "author": "정기자",
       "publishedAt": "2026-04-13",
-      "readTimeMin": 2
+      "readTimeMin": 2,
+      "keywords": [
+        { "word": "빙하", "meaning": "오랜 세월 동안 쌓인 눈이 굳어진 거대한 얼음 덩어리" },
+        { "word": "해수면", "meaning": "바닷물의 표면 높이" },
+        { "word": "온난화", "meaning": "지구의 평균 기온이 높아지는 현상" },
+        { "word": "탄소", "meaning": "생물의 몸을 이루는 가장 기본적인 원소" },
+        { "word": "기후변화", "meaning": "장기간에 걸쳐 기후 패턴이 달라지는 현상" }
+      ]
     },
     {
+      "id": 6,
       "articleId": "ART006",
       "title": "우리나라 재생에너지 비율, 처음으로 20% 돌파",
       "summary": "태양광과 풍력 발전이 크게 늘면서 국내 재생에너지 비율이 사상 처음으로 20%를 넘었습니다.",
@@ -103,12 +146,20 @@
       "targetGrade": "초학년",
       "author": "강기자",
       "publishedAt": "2026-04-12",
-      "readTimeMin": 2
+      "readTimeMin": 2,
+      "keywords": [
+        { "word": "재생에너지", "meaning": "태양광·풍력처럼 자연에서 계속 얻을 수 있는 에너지" },
+        { "word": "태양광", "meaning": "태양의 빛에너지를 전기로 변환하는 기술" },
+        { "word": "풍력", "meaning": "바람의 힘을 이용해 전기를 만드는 기술" },
+        { "word": "발전", "meaning": "전기를 만들어내는 것" },
+        { "word": "탄소중립", "meaning": "배출하는 탄소량과 흡수하는 탄소량을 같게 만드는 것" }
+      ]
     }
   ],
 
   "quizzes": [
     {
+      "id": 1,
       "quizId": "QUIZ001",
       "articleId": "ART001",
       "question": "다음 중 '인공지능(AI)'에 대한 설명으로 올바른 것은?",
@@ -116,6 +167,7 @@
       "correctIndex": 1
     },
     {
+      "id": 2,
       "quizId": "QUIZ002",
       "articleId": "ART001",
       "question": "기사에서 2030년까지 자동화될 일자리 비율은?",
@@ -123,6 +175,7 @@
       "correctIndex": 2
     },
     {
+      "id": 3,
       "quizId": "QUIZ003",
       "articleId": "ART001",
       "question": "AI가 대신할 수 없는 인간 고유의 능력은?",
@@ -130,6 +183,7 @@
       "correctIndex": 2
     },
     {
+      "id": 4,
       "quizId": "QUIZ004",
       "articleId": "ART002",
       "question": "퍼서비어런스가 화성에서 발견한 것은?",
@@ -137,6 +191,7 @@
       "correctIndex": 1
     },
     {
+      "id": 5,
       "quizId": "QUIZ005",
       "articleId": "ART002",
       "question": "화성 탐사선이 샘플을 채취한 장소는?",
@@ -144,6 +199,7 @@
       "correctIndex": 2
     },
     {
+      "id": 6,
       "quizId": "QUIZ006",
       "articleId": "ART002",
       "question": "이번 발견의 의의로 가장 적절한 것은?",
@@ -154,6 +210,7 @@
 
   "vocabulary": [
     {
+      "id": 1,
       "vocabId": "VOC001",
       "userId": 1,
       "articleId": "ART001",
@@ -165,6 +222,7 @@
       "savedAt": "2026-04-17"
     },
     {
+      "id": 2,
       "vocabId": "VOC002",
       "userId": 1,
       "articleId": "ART001",
@@ -176,6 +234,7 @@
       "savedAt": "2026-04-17"
     },
     {
+      "id": 3,
       "vocabId": "VOC003",
       "userId": 1,
       "articleId": "ART001",
@@ -190,6 +249,7 @@
 
   "writings": [
     {
+      "id": 1,
       "writingId": "WRT001",
       "userId": 1,
       "articleId": "ART001",
@@ -205,9 +265,12 @@
       "isPublish": true,
       "status": "PUBLISHED",
       "publishedAt": "2026-04-17",
-      "shareUrl": "https://c-readers.kr/share/wrt001"
+      "updatedAt": "2026-04-17T14:23:00.000Z",
+      "shareUrl": "https://c-readers.kr/share/wrt001",
+      "aiScore": 85
     },
     {
+      "id": 2,
       "writingId": "WRT002",
       "userId": 1,
       "articleId": "ART002",
@@ -223,12 +286,36 @@
       "isPublish": false,
       "status": "DRAFT",
       "publishedAt": null,
-      "shareUrl": null
+      "updatedAt": "2026-04-22T09:15:00.000Z",
+      "shareUrl": null,
+      "aiScore": null
+    },
+    {
+      "id": 3,
+      "writingId": "WRT003",
+      "userId": 1,
+      "articleId": "ART003",
+      "sixW": {
+        "who": "전국 어린이 500개 팀이",
+        "when": "지난 주말",
+        "where": "전국 어린이 창업 대회에서",
+        "what": "재활용 운동화 아이디어로 대상을 받았습니다",
+        "how": "페트병을 원단으로 바꾸는 기술을 사용해",
+        "why": "환경을 보호하고 싶었기 때문에"
+      },
+      "myOpinion": "어린이들도 환경을 지키는 아이디어를 낼 수 있다는 것이 정말 멋집니다. 저도 이런 대회에 참가해보고 싶습니다.",
+      "isPublish": true,
+      "status": "PUBLISHED",
+      "publishedAt": "2026-04-20",
+      "updatedAt": "2026-04-20T16:40:00.000Z",
+      "shareUrl": "https://c-readers.kr/share/wrt003",
+      "aiScore": 92
     }
   ],
 
   "aiReviews": [
     {
+      "id": 1,
       "reviewId": "REV001",
       "writingId": "WRT001",
       "userId": 1,
@@ -248,30 +335,211 @@
         }
       ],
       "summary": "전체적으로 좋은 글이에요! 자신의 의견을 명확하게 표현하는 점이 훌륭합니다. 문장 끝부분의 표현을 조금 다듬으면 더 자연스러운 글이 될 거예요.",
-      "score": 78,
+      "score": 85,
       "createdAt": "2026-04-17"
+    },
+    {
+      "id": 2,
+      "reviewId": "REV002",
+      "writingId": "WRT003",
+      "userId": 1,
+      "correctedContent": "어린이들도 환경을 지키는 아이디어를 낼 수 있다는 것이 정말 멋집니다. 저도 이런 대회에 참가해보고 싶습니다.",
+      "feedbacks": [
+        {
+          "original": "정말 멋집니다",
+          "suggestion": "정말 멋진 일이라고 생각합니다",
+          "reason": "좀 더 구체적으로 표현하면 글이 풍부해져요.",
+          "type": "STRUCTURE"
+        }
+      ],
+      "summary": "글의 구성이 탄탄하고 주제에 잘 맞게 썼어요! 조금 더 자신의 생각을 구체적으로 풀어쓰면 훨씬 좋은 글이 될 것 같아요.",
+      "score": 92,
+      "createdAt": "2026-04-20"
     }
   ],
 
   "mission": [
     {
+      "id": 1,
+      "userId": 1,
+      "date": "2026-04-15",
+      "readCount": 2,
+      "quizCount": 1,
+      "writingCount": 0,
+      "isAllClear": false
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "date": "2026-04-16",
+      "readCount": 1,
+      "quizCount": 1,
+      "writingCount": 1,
+      "isAllClear": true
+    },
+    {
+      "id": 3,
       "userId": 1,
       "date": "2026-04-17",
       "readCount": 1,
       "quizCount": 0,
       "writingCount": 1,
       "isAllClear": false
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "date": "2026-04-18",
+      "readCount": 3,
+      "quizCount": 2,
+      "writingCount": 0,
+      "isAllClear": false
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "date": "2026-04-19",
+      "readCount": 2,
+      "quizCount": 2,
+      "writingCount": 1,
+      "isAllClear": true
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "date": "2026-04-20",
+      "readCount": 1,
+      "quizCount": 1,
+      "writingCount": 1,
+      "isAllClear": true
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "date": "2026-04-21",
+      "readCount": 2,
+      "quizCount": 1,
+      "writingCount": 0,
+      "isAllClear": false
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "date": "2026-04-22",
+      "readCount": 1,
+      "quizCount": 0,
+      "writingCount": 0,
+      "isAllClear": false
+    },
+    {
+      "id": 9,
+      "userId": 1,
+      "date": "2026-04-23",
+      "readCount": 2,
+      "quizCount": 2,
+      "writingCount": 1,
+      "isAllClear": true
+    },
+    {
+      "id": 10,
+      "userId": 1,
+      "date": "2026-04-24",
+      "readCount": 1,
+      "quizCount": 1,
+      "writingCount": 0,
+      "isAllClear": false
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "date": "2026-04-25",
+      "readCount": 3,
+      "quizCount": 2,
+      "writingCount": 1,
+      "isAllClear": true
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "date": "2026-04-26",
+      "readCount": 1,
+      "quizCount": 0,
+      "writingCount": 0,
+      "isAllClear": false
     }
   ],
 
+  "hanjamon": [
+    {
+      "id": 1,
+      "date": "2026-04-26",
+      "character": "讀",
+      "reading": "읽을 독",
+      "meaning": "읽다",
+      "example": "독서(讀書): 책을 읽음"
+    },
+    {
+      "id": 2,
+      "date": "2026-04-25",
+      "character": "學",
+      "reading": "배울 학",
+      "meaning": "배우다",
+      "example": "학교(學校): 배우는 곳"
+    },
+    {
+      "id": 3,
+      "date": "2026-04-24",
+      "character": "問",
+      "reading": "물을 문",
+      "meaning": "묻다, 질문하다",
+      "example": "질문(質問): 모르는 것을 물어봄"
+    },
+    {
+      "id": 4,
+      "date": "2026-04-23",
+      "character": "思",
+      "reading": "생각할 사",
+      "meaning": "생각하다",
+      "example": "사고(思考): 깊이 생각함"
+    },
+    {
+      "id": 5,
+      "date": "2026-04-22",
+      "character": "知",
+      "reading": "알 지",
+      "meaning": "알다",
+      "example": "지식(知識): 배워서 아는 것"
+    },
+    {
+      "id": 6,
+      "date": "2026-04-21",
+      "character": "書",
+      "reading": "글 서",
+      "meaning": "글, 책",
+      "example": "도서관(圖書館): 책을 모아 놓은 곳"
+    },
+    {
+      "id": 7,
+      "date": "2026-04-20",
+      "character": "友",
+      "reading": "벗 우",
+      "meaning": "친구",
+      "example": "우정(友情): 친구 사이의 정"
+    }
+  ],
+
+  "quizResults": [],
+
   "membership": [
     {
+      "id": 1,
       "planId": "PLAN001",
       "planName": "베이직",
       "amount": 9900,
       "description": "월 9,900원 / 기사 무제한 + 퀴즈"
     },
     {
+      "id": 2,
       "planId": "PLAN002",
       "planName": "프리미엄",
       "amount": 19900,
